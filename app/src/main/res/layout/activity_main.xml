@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:touchscreenBlocksFocus="false"
+            app:title="Creación de Personaje"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:titleTextColor="@color/white" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/personajeImagen"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/claseImagen"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            />
+
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:ems="15"
+            android:fontFamily="sans-serif-medium"
+            android:hint="@string/nombre"
+            android:inputType="text"
+            android:singleLine="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/Raza"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="@string/Raza"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRaza"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:entries="@array/Razas"
+            android:spinnerMode="dialog" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/Clase"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="@string/Clase"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/spinnerClase"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:entries="@array/Clases"
+            android:spinnerMode="dialog" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/EstadoVital"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="@string/Estado"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/spinnerEstadoVital"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:entries="@array/EstadoVital"
+            android:spinnerMode="dialog" />
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="Crear personaje" />
+    </TableRow>
+
+</TableLayout>

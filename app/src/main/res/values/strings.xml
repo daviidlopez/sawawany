@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">awany</string>
+    <string name="nombre">Nombre:</string>
+    <string name="Raza">Raza:</string>
+    <string name="Clase">Clase:</string>
+    <string name="Estado">Estado Vital:</string>
+    <string-array name="Razas">
+        <item>Humano</item>
+        <item>Elfo</item>
+        <item>Enano</item>
+        <item>Maldito</item>
+    </string-array>
+    <string-array name="Clases">
+        <item>Brujo</item>
+        <item>Guerrero</item>
+        <item>Mago</item>
+    </string-array>
+    <string-array name="EstadoVital">
+        <item>Adulto</item>
+        <item>Anciano</item>
+        <item>Joven</item>
+    </string-array>
+</resources>
