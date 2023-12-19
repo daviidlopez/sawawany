@@ -16,8 +16,8 @@
         <item>Mago</item>
     </string-array>
     <string-array name="EstadoVital">
-        <item>Adulto</item>
         <item>Anciano</item>
+        <item>Adulto</item>
         <item>Joven</item>
     </string-array>
     <string name="bVuelta">Volver a creación</string>
