@@ -20,4 +20,6 @@
         <item>Anciano</item>
         <item>Joven</item>
     </string-array>
+    <string name="bVuelta">Volver a creación</string>
+    <string name="bContinua">Continuar Aventura</string>
 </resources>
